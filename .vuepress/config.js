@@ -3,7 +3,7 @@ module.exports = {
     title: "Plain-ww",
     base: '/Wblog/', //设置站点根路径 
     description: "开始学习",
-    dest: "dist",
+    dest: ".vuepress/dist",
     head: [
         ['link', { rel: "icon", href: "/favicon.ico" }],
         ['meta', { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }]
