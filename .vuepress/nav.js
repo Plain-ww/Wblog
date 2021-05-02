@@ -8,27 +8,19 @@ module.exports = [{
         link: "/timeline/",
         icon: "reco-date"
     },
-    {
-        text: "项目",
-        icon: "reco-document",
-        items: [{
-            text: "后台管理系统",
-            link: "/docs/theme-reco/"
-        }]
-    },
-    // {
-    // text: "Contact",
-    // icon: "reco-message",
-    // items: [{
-    //     text: "GitHub",
-    //     link: "https://github.com/recoluan",
-    //     icon: "reco-github"
-    // }]
-    // },
+
     {
         text: '其他',
         icon: "reco-document",
         items: [{
+                text: "项目",
+                icon: "reco-document",
+                items: [{
+                    text: "后台管理系统",
+                    link: "/docs/theme-reco/"
+                }]
+            },
+            {
                 text: '在线编辑',
                 items: [
                     { text: '图片压缩', link: 'https://tinypng.com/' }
@@ -49,5 +41,15 @@ module.exports = [{
                 ]
             }
         ]
+    },
+    {
+        text: "关于我",
+        link: "/docs/theme-reco/",
+        icon: "reco-account",
+    },
+    {
+        text: "GitHub",
+        link: "https://github.com/Plain-ww",
+        icon: "reco-github"
     }
 ]

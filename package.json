@@ -1,7 +1,7 @@
 {
     "name": "plain-ww",
     "version": "1.0.0",
-    "author": "reco_luan",
+    "author": "Wwei",
     "scripts": {
         "dev": "vuepress dev . --open --host \"localhost\"",
         "build": "vuepress build ."
@@ -10,5 +10,9 @@
         "vuepress": "1.8.2",
         "vuepress-theme-reco": "1.6.6"
     },
-    "description": ""
+    "description": "",
+    "dependencies": {
+        "valine": "^1.4.14",
+        "vuepress-plugin-comment": "^0.7.3"
+    }
 }

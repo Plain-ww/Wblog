@@ -1,6 +1,6 @@
 ---
 home: true
-heroText: 努力 ， 奋斗
+heroText: 小王の个人博客
 tagline: Work harder！Keep on！
 # heroImage: /hero.png
 # heroImageStyle: {
@@ -12,7 +12,7 @@ tagline: Work harder！Keep on！
 #   borderRadius: '1rem',
 # }
 bgImageStyle: {
-  height: '450px'
+  height: '700px'
 }
 isShowTitleInHome: false
 actionText: Guide
