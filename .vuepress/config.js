@@ -1,85 +1,45 @@
 module.exports = {
     port: '7778', // 生成网页端口（本地调试使用）
     title: "Plain-ww",
-    base: '/Wblog/', //设置站点根路径 
+    base: '/Blogs/', //设置站点根路径 
+    // base: '.', //设置站点根路径 
     description: "开始学习",
     dest: ".vuepress/dist",
     head: [
-        ['link', { rel: "icon", href: "/favicon.ico" }],
+        ['link', { rel: "icon", href: "/image/favicon.ico" }], //图标
         ['meta', { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }]
     ],
     theme: "reco",
     themeConfig: {
-        nav: [{
-                "text": "Home",
-                "link": "/",
-                "icon": "reco-home"
-            },
-            {
-                "text": "TimeLine",
-                "link": "/timeline/",
-                "icon": "reco-date"
-            },
-            {
-                "text": "Docs",
-                "icon": "reco-message",
-                "items": [{
-                    "text": "vuepress-reco",
-                    "link": "/docs/theme-reco/"
-                }]
-            },
-            {
-                "text": "Contact",
-                "icon": "reco-message",
-                "items": [{
-                    "text": "GitHub",
-                    "link": "https://github.com/recoluan",
-                    "icon": "reco-github"
-                }]
-            }
-        ],
-        sidebar: {
-            "/docs/theme-reco/": [
-                "",
-                "theme",
-                "plugin",
-                "api"
-            ]
-        },
+        nav: require("./nav"), //上面的导航栏
+        sidebar: require("./sidebar"), // 侧边栏
         type: "blog",
+        // blogConfig: require("./blogConfig"),  //上面的导航栏
+
         blogConfig: {
             "category": {
                 "location": 2,
-                "text": "Category"
+                "text": "分类"
             },
             "tag": {
                 "location": 3,
-                "text": "Tag"
+                "text": "标签"
             }
         },
         friendLink: [{
-                "title": "午后南杂",
-                "desc": "Enjoy when you can, and endure when you must.",
-                "email": "1156743527@qq.com",
-                "link": "https://www.recoluan.com"
-            },
-            {
-                "title": "vuepress-theme-reco",
-                "desc": "A simple and beautiful vuepress Blog & Doc theme.",
-                "avatar": "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-                "link": "https://vuepress-theme-reco.recoluan.com"
-            }
-        ],
-        logo: "/logo.png",
+            "title": "午后南杂",
+            "desc": "Enjoy when you can, and endure when you must.",
+            "email": "1156743527@qq.com",
+            "link": "https://www.recoluan.com"
+        }],
+        logo: "/image/logo.png",
         search: true,
         searchMaxSuggestions: 10,
         lastUpdated: "Last Updated",
-        author: "",
-        authorAvatar: "/avatar.png",
+        author: "Wwei",
+        authorAvatar: "/image/touxiang.jpg",
         record: "Wwei",
         startYear: "2020"
-
-
     },
     "markdown": {
         "lineNumbers": true

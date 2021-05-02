@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: vuepress-theme-reco
-tagline: A simple and beautiful vuepress blog theme.
+heroText: 努力 ， 奋斗
+tagline: Work harder！Keep on！
 # heroImage: /hero.png
 # heroImageStyle: {
 #   maxWidth: '600px',
