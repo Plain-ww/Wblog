@@ -8,7 +8,7 @@ module.exports = {
     head: [
         ['link', { rel: "icon", href: "/image/favicon.ico" }], //图标
         ['meta', { name: "viewport", content: "width=device-width,initial-scale=1,user-scalable=no" }],
-        [
+        [ //添加百度统计
             "script", {},
             `
             var _hmt = _hmt || [];
