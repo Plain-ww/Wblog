@@ -4,12 +4,6 @@ module.exports = [{
         icon: "reco-home"
     },
     {
-        text: "时间线",
-        link: "/timeline/",
-        icon: "reco-date"
-    },
-
-    {
         text: '其他',
         icon: "reco-document",
         items: [{
@@ -41,6 +35,11 @@ module.exports = [{
                 ]
             }
         ]
+    },
+    {
+        text: "时间线",
+        link: "/timeline/",
+        icon: "reco-date"
     },
     {
         text: "关于我",
